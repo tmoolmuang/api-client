@@ -1,0 +1,17 @@
+<div>
+  <br />
+  <p><%= link_to("All Aliens", displays_path) %></p>
+  
+  <p>Alien <input type="text" id="show_id" placeholder="id" size="4" maxlength="4">
+  <a onclick="this.href='displays/' + document.getElementById('show_id').value">show</a></p>
+
+  <p><%= link_to "Create New Alien", new_display_path %></p>
+
+  <p><%= link_to "Update Alien #1", edit_display_path(1) %></p>
+
+  <p><%= link_to "Delete Alien #x", display_path(4), method: :delete, data: { confirm: 'Are you sure you want to delete this alien?' } %></p>
+
+  <p>Delete Alien <input type="text" id="delete_id" placeholder="id" size="4" maxlength="4">
+  <a data-method='delete' data-confirm="Are you sure you want to delete this alien?" onclick="this.href='displays/' + document.getElementById('delete_id').value">delete</a></p>
+
+</div>

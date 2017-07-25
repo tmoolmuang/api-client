@@ -1,0 +1,22 @@
+<div>
+  <h3>Aliens</h3>
+  <h4>Total count: <%= @aliens.count %></h4>
+  <table>
+    <tr>
+      <th>&nbsp;</th>
+      <th>Name</th>
+      <th>Year Found</th>
+      <th>Month Found</th>
+      <th>Origin</th>
+    </tr>
+    <% @aliens.each do |a| %>
+    <tr>
+      <td><%= a['id'] %></td>
+      <td><%= a['name'] %></td>
+      <td><%= a['year'] %></td>
+      <td><%= a['month'] %></td>
+      <td><%= a['origin'] %></td>
+    </tr>
+    <% end %>
+  </table>
+</div>
