@@ -1,5 +1,5 @@
 require 'api'
-class DisplaysController < ApplicationController
+class AliensController < ApplicationController
   TOKEN = 'JjfWKXb23JkJApd9jP3cGg'
   
   def index

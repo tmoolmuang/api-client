@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'displays#home'
-  
-  resources :displays
+  resources :powers
+  resources :aliens
+  root 'welcome#index'
 end
