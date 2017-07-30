@@ -1,2 +1,14 @@
-<h1>Powers#index</h1>
-<p>Find me in app/views/powers/index.html.erb</p>
+<h4>Powers for Alien 35</h4>
+<table>
+  <tr>
+    <th>&nbsp;</th>
+    <th>Ability</th>
+  </tr>
+  <% @powers.each do |p| %>
+  <tr>
+    <td><%= p['id'] %></td>
+    <td><%= p['ability'] %></td>
+  </tr>
+  <% end %>
+</table>
+<h4>Power count: <%= @powers.count %></h4>

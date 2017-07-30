@@ -1,2 +1,13 @@
-<h1>Powers#new</h1>
-<p>Find me in app/views/powers/new.html.erb</p>
+<div>
+  <h4>Created Power <%= @power['id'] %></h4>
+  <table>
+    <tr>
+      <th>&nbsp;</th>
+      <th>Ability</th>
+    </tr>
+    <tr>
+      <td><%= @power['id'] %></td>
+      <td><%= @power['ability'] %></td>
+    </tr>
+  </table>
+</div>
